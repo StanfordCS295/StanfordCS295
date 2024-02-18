@@ -1,11 +1,11 @@
 <!-- Slots into the "Assignments" column -->
 
 <div>
-	<slot />
+  <slot />
 </div>
 
 <style>
-	div {
-		grid-area: assignments;
-	}
+  div {
+    grid-area: assignments;
+  }
 </style>

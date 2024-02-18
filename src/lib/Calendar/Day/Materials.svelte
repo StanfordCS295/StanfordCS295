@@ -1,13 +1,13 @@
 <!-- Slots into the "Materials" column -->
 
 <div>
-	<slot />
+  <slot />
 </div>
 
 <style>
-	div {
-		grid-area: materials;
-		display: flex;
-		flex-wrap: wrap;
-	}
+  div {
+    grid-area: materials;
+    display: flex;
+    flex-wrap: wrap;
+  }
 </style>

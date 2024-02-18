@@ -1,57 +1,40 @@
 <!-- Generates a calendar from the lecture data in the yaml -->
 
 <script lang="ts">
-	import moment from 'moment';
-	import BoxLink from './BoxLink.svelte';
-	import Day from './Calendar/Day.svelte';
-	import Assignments from './Calendar/Day/Assignments.svelte';
-	import Materials from './Calendar/Day/Materials.svelte';
-	import Topic from './Calendar/Day/Topic.svelte';
-	import Week from './Calendar/Week.svelte';
+  import Day from './Calendar/Day.svelte';
+  import Assignments from './Calendar/Day/Assignments.svelte';
+  import Topic from './Calendar/Day/Topic.svelte';
 
-	import {
-		class_data,
-		fixupLink,
-		getBoxColor,
-		getLectureMoment,
-		lectures_by_week
-	} from './classData';
+  import { class_data, lectures } from './classData';
 
-	const weekdays = class_data.class_days.length;
+  const weekdays = class_data.class_days.length;
 </script>
 
 <div class="calendar">
-	{#each lectures_by_week as lectures, i}
-		<Week number={i + 1} future={getLectureMoment(i * weekdays).isAfter(moment())}>
-			{#each lectures as lecture, j}
-				<Day
-					date={getLectureMoment(i * weekdays + j).format('ddd, MMM D')}
-					holiday={!!lecture.holiday}
-					even={j % 2 == 0}
-					future={getLectureMoment(i * weekdays + j).isAfter(moment())}
-				>
-					<Topic>{lecture.topic}</Topic>
-					{#if lecture.materials}
-						<Materials>
-							{#each Object.keys(lecture.materials) as name}
-								<BoxLink color={getBoxColor(name)} href={fixupLink(lecture.materials[name])}
-									>{name}</BoxLink
-								>
-							{/each}
-						</Materials>
-					{/if}
-					{#if lecture.assignments}
-						<Assignments>{lecture.assignments}</Assignments>
-					{/if}
-				</Day>
-			{/each}
-		</Week>
-	{/each}
+  {#each lectures as lecture, j}
+    {#if lecture.top}
+      <Day date="Date" header>
+        <Topic>Topic</Topic>
+        <Assignments>Due Dates</Assignments>
+      </Day>
+    {:else if lecture.unit}
+      <Day date="" header>
+        <Topic>{lecture.topic}</Topic>
+      </Day>
+    {:else}
+      <Day date={lecture.date} holiday={!!lecture.holiday} even={j % 2 == 0}>
+        <Topic>{lecture.topic}</Topic>
+        {#if lecture.assignments}
+          <Assignments><a href={lecture.url}>{lecture.assignments}</a></Assignments>
+        {/if}
+      </Day>
+    {/if}
+  {/each}
 </div>
 
 <style>
-	.calendar {
-		font-size: 0.9em;
-		margin-bottom: 3em;
-	}
+  .calendar {
+    font-size: 0.9em;
+    margin-bottom: 3em;
+  }
 </style>

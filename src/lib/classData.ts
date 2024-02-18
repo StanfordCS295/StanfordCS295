@@ -8,17 +8,11 @@ import moment from 'moment';
 
 // === Data ===
 export const class_data = class_data_raw as ClassData;
-export const lectures_by_week = getLectureDataByWeek();
+export const lectures = getLectureDataByWeek();
 
 /** Sorts lecture data into a list-of-lists, sorting lectures into weeks. */
 function getLectureDataByWeek() {
-  const weekdays = class_data.class_days.length;
-  const arr = [];
-  const weeks = Math.floor(class_data.lectures.length / weekdays);
-  for (let i = 0; i < weeks; i++) {
-    arr.push(class_data.lectures.slice(i * weekdays, (i + 1) * weekdays));
-  }
-  return arr;
+  return class_data.lectures;
 }
 
 // === Helper Functions ===
@@ -45,6 +39,7 @@ export function getLectureMoment(lectureNumber: number) {
 
   return startDate.add(weekIdx, 'weeks').isoWeekday(weekday);
 }
+
 
 // Gets the box color for a particular material
 export function getBoxColor(type: string) {
@@ -111,6 +106,7 @@ export interface Assignment {
   due: string;
   materials?: Record<string, string>;
   details?: string;
+  url?: string;
 }
 
 export interface Lecture {
@@ -119,4 +115,7 @@ export interface Lecture {
   details?: string;
   assignments?: string;
   holiday?: boolean;
+  date?: string;
+  top?: boolean;
+  unit?: boolean;
 }

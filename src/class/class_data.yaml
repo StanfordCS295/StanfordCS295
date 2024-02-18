@@ -5,312 +5,85 @@ class_days:
 assignment_due_time: 23:59
 
 instructors:
-  - name: Akshay Srivatsan
+  - name: Sara Achour
     role: Instructor
-    email: akshay01@stanford.edu
-    image: /img/akshay.jpg
+    image: https://lh6.googleusercontent.com/ZZsfKNy-1zMTQoXfIca0AjLsA5IoQeFg3TSbabO8jAAloFu-4dmLrSHCpZt-nXsl4Up8Se8w7sJZkf44oHxv-jvTLLpo96IHgGUsSEOC0TJUvWaIs2Dq1b6Xo-zz6cbkhQ=w1280
+
+  - name: MacVincent Agha-Oko
+    role: Course Assistant
+    email: [maghaoko at stanford]
+    image: https://github.com/macvincent.png
     officeHours:
-      - when: 'Thursdays, 10am-12pm'
-        where: 'at/around Gates 478 and on Zoom'
-        url: 'https://stanford.zoom.us/j/99823963312?pwd=ZC96NlZodEg5NldTT0JIcCtCZElWdz09'
-  - name: Ayelet Drazen
-    role: Instructor
-    email: adrazen@stanford.edu
-    image: /img/ayelet.jpg
-    officeHours:
-      - when: Mondays, 3-4pm
-        where: in Huang Basement
-        # url: 'TBD'
-      - when: Tuesdays, 8-9pm
-        where: on Zoom
-        url: https://stanford.zoom.us/j/2035566567?pwd=VXpjbENSY296Z1c0RDlmbytSSHMvZz09
-  - name: Jonathan Kula
-    role: Instructor
-    email: jdkula@stanford.edu
-    image: /img/jonathan.jpg
-    officeHours:
-      - when: 'Wednesday 11am to 12pm (just for week 9)'
-        where: 'on Zoom'
-        url: 'https://stanford.zoom.us/j/99170211188?pwd=RytTUlNVVGZhMVJVMGFMY093ek9pQT09'
-      - when: 'Tuesdays, 5-6pm'
-        where: 'on Zoom'
-        url: 'https://stanford.zoom.us/j/99170211188?pwd=RytTUlNVVGZhMVJVMGFMY093ek9pQT09'
-
-assignments:
-  - name: 'Assignment 0: Getting Set Up!'
-    points: 1
-    due: 2023/04/12
-    materials:
-      handout: '/assignments/assign0'
-      gradescope: 'https://www.gradescope.com/courses/527944/assignments/2790820'
-    details: |-
-      This short assignment is meant to get a basic Unix-compatible shell environment set up on your computer.  We'll do this together in class during the first lecture.
-  - name: 'Assignment 1: _Shell_ We?'
-    points: 3
-    due: 2023/04/19
-    materials:
-      handout: '/assignments/assign1'
-      gradescope: 'https://www.gradescope.com/courses/527944/assignments/2816069'
-    details: |-
-      This assignment consists of two different components:
-        1. You’ll familiarize yourself with RegEx by completing a few exercises
-        2. You’ll combine your RegEx and shell expertise to wrangle some words
-  - name: 'Assignment 2: Bourne to Be Wild'
-    points: 3
-    due: 2023/04/26
-    materials:
-      handout: '/assignments/assign2'
-      gradescope: 'https://www.gradescope.com/courses/527944/assignments/2836843'
-    details: |-
-      This assignment consists of two different components:
-        1. You'll write a simple shell script that does some data analysis
-        2. You’ll get some practice using vim
-  - name: 'Assignment 3: Off The Beaten `$PATH`'
-    points: 3
-    due: 2023/05/03
-    materials:
-      handout: '/assignments/assign3'
-      gradescope: 'https://www.gradescope.com/courses/527944/assignments/2854819'
-    details: |-
-      This assignment consists of three different components:
-
-        1. You will modify your `$PATH` variable, shell prompt, and add aliases
-        2. You'll get some practice using the networking tools we learned about in Lecture 8
-        3. You'll run a small server that our grading machine will connect to
-  - name: "Assignment 4: It's `git`-ting HOT in here!"
-    points: 3
-    due: 2023/05/10
-    materials:
-      handout: '/assignments/assign4'
-      gradescope: 'https://www.gradescope.com/courses/527944/assignments/2873836'
-    details: |-
-      This assignment consists of three different components:
-
-        1. Do a Git tutorial
-        2. Practice using Git from the command line
-        3. Practice using GitHub
-  - name: 'Assignment 5: It all `make`s sense!'
-    points: 3
-    due: 2023/05/17
-    materials:
-      handout: '/assignments/assign5'
-      gradescope: 'https://www.gradescope.com/courses/527944/assignments/2891087'
-    details: |-
-      This assignment consists of two different components:
-
-      1. Practice using `make` and CI tools
-      2. Practice with profiling tools
-  - name: 'Assignment 6: The (Public) Key to My Heart'
-    points: 3
-    due: 2023/05/24
-    materials:
-      handout: '/assignments/assign6'
-      gradescope: 'https://www.gradescope.com/courses/527944/assignments/2900947'
-    details: |-
-      This assignment consists of two different components:
-
-      1. Spoof an email
-      2. Set up SSH keys to sign a message
-  - name: 'Assignment 7: On Cloud Nine'
-    points: 3
-    materials:
-      handout: '/assignments/assign7'
-      gradescope: 'https://www.gradescope.com/courses/527944/assignments/2906434'
-    due: 2023/05/31
-    details: |-
-      This assignment consists of two interconnected components:
-
-      1. Create and publish a Docker image on DockerHub
-      2. Launch a free tier instance on AWS and run a server on it (the same server you built in part 1!)
-  - name: 'Assignment 8: Codec of Conduct'
-    points: 3
-    due: 2023/06/07
-    materials:
-      handout: '/assignments/assign8'
-      gradescope: 'https://www.gradescope.com/courses/527944/assignments/2919148'
-      files: 'https://cs45.stanford.edu/res/assign8/assign8-files.zip'
-    details:
-  - name: 'Final Project'
-    points: 5
-    due: 2023/06/09
-    materials:
-      handout: '/assignments/final-project.pdf'
-      gradescope - slides: 'https://www.gradescope.com/courses/527944/assignments/2908634'
-      gradescope - written guide: 'https://www.gradescope.com/courses/527944/assignments/2908640'
-    details:
-      For your final project, we want you to explore a tool or concept from the course (or a tool
-      that we didn't discuss in the course but that you are interested in!) in further detail. You
-      will submit both slides and a written guide for the tool or concept you choose.
+      - when: Thursdays, 11:00 AM - 1:00 PM
+        where: Gates 3B Common Area (Or Zoom)
+        url: https://stanford.zoom.us/j/95993485596?pwd=RjVaRStRM3JHK0ltTEFTWUlaZ25WZz09
 
 lectures:
-  # Week 1
-  - topic: 'Lecture 1: Course Overview'
-    materials:
-      slides: '/lectures/1-introduction.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9d9ca2f2-b5b4-4e3d-a31a-afda00707ffb'
-      assignment 0: '/assignments/assign0'
-    details: |-
-      We covered basic class logistics (also available on the [course info page](/course_info)), and did [Assignment 0](/assignments/assign0) to get everyone set up.
-  - topic: 'Lecture 2: The Shell and Shell Tools'
-    materials:
-      slides: '/lectures/2-shell-tools.pdf'
-      notes: '/lectures/2-shell-tools.notes.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8bdcb40f-3f50-472c-ac69-afdc00252948'
-    details: |-
-      We defined what "the shell" is, went over the history/background of the UNIX operating system and the shell as we know it today, and covered how to use basic shell commands.
-
-      Useful Resources:
-        * `man` pages (the system manual)
-        * [cheat.sh](https://cheat.sh)
-        * [devhints.io/bash](https://devhints.io/bash)
-
-      I used a non-standard command `bat` in my lecture demo; the software installation page contains installation instructions if you want to try it out.
-
-  # Week 2
-  - topic: 'Lecture 3: Data Manipulation'
-    materials:
-      slides: '/lectures/3-data-wrangling.pdf'
-      notes: '/lectures/3-data-wrangling.notes.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e1d128c5-2942-4b01-bfc0-afe3013b4f82'
-    details: |-
-      We will learn how to efficiently process large datasets (or any other text-based data) from the shell using tools like regular expressions.
-
-      There's a great regular expression debugger at [regex101](https:/regex101.com).
-  - topic: 'Lecture 4: Shell Scripting'
-    materials:
-      slides: '/lectures/4-shell-scripting.pdf'
-      notes: '/lectures/4-shell-scripting.notes.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c175c09c-496e-40b4-a2f8-afe400017d07'
-      assignment 1: '/assignments/assign1'
-    details: |-
-      We will learn how to write our own "scripts"—mini-programs that combine shell commands.
-    assignments: Assignment 0 Due
-
-  # Week 3
-  - topic: 'Lecture 5: Text Editors'
-    materials:
-      slides: '/lectures/5-text-editors.pdf'
-      notes: '/lectures/5-text-editors.notes.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc6f1c14-a930-431e-ba0f-afe90087c2d4'
-    details: |-
-      We will compare and contrast different programs commonly used to edit code; namely, the terminal editor vim and the graphical IDE (integrated development environment) Visual Studio Code.
-  - topic: 'Lecture 6: Command Line Environment'
-    materials:
-      slides: '/lectures/6-command-line-environment.pdf'
-      notes: '/lectures/6-command-line-environment.notes.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9d3e6e6a-0f78-453c-b190-afea00193bfb'
-      assignment 2: '/assignments/assign2'
-    details: |-
-      We will delve in more detail into the environment command-line programs run within, including:
-        * how we configure programs
-        * how programs find data (the filesystem)
-        * how we can run multiple programs at the same time
-
-      We will also cover a terminal multiplexer called `tmux`; be sure to install it using [the instructions on the software page](/software)
-    assignments: Assignment 1 Due
-
-  # Week 4
-  - topic: 'Lecture 7: Compilers and Package Management'
-    materials:
-      slides: '/lectures/7-compilers.pdf'
-      notes: '/lectures/7-compilers.notes.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d2a0af32-23e7-4505-b8c3-aff1004c1d2e'
-    details: |-
-      We will see two related concepts:
-        * how source code (in C and Python) is turned into a program
-        * how we can install programs shared by other people
-  - topic: 'Lecture 8: Computer Networking'
-    details: |-
-      We will learn how computers talk to one another across the internet.
-    materials:
-      slides: '/lectures/8-networking.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ef14a39d-590d-42df-9726-aff5018578bb'
-      assignment 3: '/assignments/assign3'
-    assignments: Assignment 2 Due
-
-  # Week 5
-  - topic: 'Lecture 9: Version Control I'
-    details: |-
-      We will learn how to keep track of, switch between, and merge different versions of our code using the popular version control system `git`.
-    materials:
-      slides: '/lectures/9-version-control.pdf'
-      notes: '/lectures/9-version-control.notes.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=579b269d-0f0d-410a-a504-aff60182b250'
-  - topic: 'Lecture 10: Version Control II'
-    materials:
-      slides: '/lectures/10-version-control.pdf'
-      notes: '/lectures/10-version-control.notes.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ef8803a6-3073-47a8-9679-affc01263458'
-      assignment 4: '/assignments/assign4'
-    details: |-
-      We will learn how to collaborate with others using `git` and GitHub.
-    assignments: Assignment 3 Due
-
-  # Week 6
-  - topic: 'Lecture 11: Build Systems & DevOps'
-    materials:
-      slides: '/lectures/11-ci-cd.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d094016c-acf4-41a1-af0d-affd00c90e07'
-    details: |-
-      We will learn how to set up a system that can automatically compile, test, and deploy our code.
-  - topic: 'Lecture 12: Debugging and Profiling'
-    materials:
-      slides: '/lectures/12-debugging-profiling.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=baf14927-eb28-4c81-ac4a-b000004bacbe'
-      assignment 5: '/assignments/assign5'
-    details: |-
-      We will cover common debugging strategies and various static analysis tools that can be used to make programming easier.
-    assignments: Assignment 4 Due
-
-  # Week 7
-  - topic: 'Lecture 13: Security'
-    details: |-
-      We will introduce the concept of computer security, including different types of attacks you might see in the real world (and strategies to protect yourself from them).
-    materials:
-      slides: '/lectures/13-security.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f1e4808a-7930-4ac5-84d1-b0060015f975'
-  - topic: 'Lecture 14: Cryptography'
-    details: |-
-      We will see real-world tools used to verify people's identity and keep data secure even in untrustworthy settings (like the internet).
-    materials:
-      slides: '/lectures/14-cryptography.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9b7a2a49-dc7e-4724-867f-b009012aafd5'
-      assignment 6: '/assignments/assign6'
-    assignments: Assignment 5 Due
-
-  # Week 8
-  - topic: 'Lecture 15: Virtual Machines & Containers'
-    details: |-
-      We will set up and run virtual computers on your real computers, both for security and for ease of software development and deployment.
-    materials:
-      slides: '/lectures/15-vms-containers.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d56ce569-39be-4f2e-8d7f-b00e004a3888'
-      final project: '/assignments/final-project.pdf'
-  - topic: 'Lecture 16: Cloud & Serverless'
-    materials:
-      slides: '/lectures/16-cloud-serverless.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7689a25e-f0aa-47a3-9568-b00e0054e80a'
-      assignment 7: '/assignments/assign7'
-    details: |-
-      We will set up a connection to a computer running on a "cloud" service, such as Amazon AWS, Google GCP, or Microsoft Azure, and run our own code on it.  We will also set up a simpler service using a "serverless" platform, which is a convenient way of deploying code without much work.
-    assignments: Assignment 6 Due
-
-  # Week 9
-  - topic: 'No Lecture: Memorial Day'
-    holiday: yes
-  - topic: 'Lecture 17: Media Encoding'
-    details: |-
-      We will look at how different types of media (text, images, audio, and video) are represented by computers, including the tradeoffs of different formats.
-    materials:
-      slides: '/lectures/17-encoding.pdf'
-      notes: '/lectures/17-encoding.notes.pdf'
-      lecture video: 'https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0c35a78-dea8-432b-86c3-b017013d1239'
-      assignment 8: '/assignments/assign8'
-    assignments: Assignment 7 Due
-
-  # Week 10
-  - topic: 'Lecture 18: Q&A and Conclusion'
-    details: |-
-      Whatever topics you find interesting!  Let us know what you want us to cover.
-  - topic: 'No Lecture'
-    assignments: Assignment 8 and Final Project Due
+  - topic: Test
+    top: true
+  - topic: 'Lecture 1: No Class'
+    date: 1/10/2024
+    holiday: true
+  - topic: Introduction
+    unit: true
+  - topic: 'Lecture 2: Introduction & Why Bugs Matter'
+    date: 1/12/2024
+  - topic: 'Lecture 3: Anatomy of a Software Bug '
+    date: 1/17/2024
+  - topic: Dynamic Bug-Finding Methods
+    unit: true
+  - topic: 'Lecture 4: Introduction to Fuzzing'
+    date: 1/19/2024
+  - topic: 'Lecture 5: Structured Greybox Fuzzing'
+    date: 1/24/2024
+  - topic: 'Lecture 6: Learning-Based Fuzzing'
+    date: 1/26/2024
+  - topic: 'Lecture 7: Delta Debugging'
+    date: 1/31/2024
+  - topic: Static Bug-Finding Methods
+    unit: true
+  - topic: 'Lecture 8: Systematic Testing & Symbolic Execution'
+    date: 2/2/2024
+    assignments: Assignment 1
+    url: https://drive.google.com/drive/folders/17-Wq0zaMGyTQCmWHAU3CMGWMTWRa4Ws3?usp=drive_link
+  - topic: 'Lecture 9: Symbolic Execution Continued'
+    date: 2/7/2024
+  - topic: 'Lecture 10: Concolic Execution'
+    date: 2/9/2024
+  - topic: Writing Bug-Free Code
+    unit: true
+  - topic: 'Lecture 11: Dynamic Instrumentation'
+    date: 2/14/2024
+  - topic: 'Lecture 12: Verification'
+    date: 2/16/2024
+  - topic: 'Lecture 13: Gradual Typing'
+    assignments: Assignment 2
+    date: 2/21/2024
+    url: https://drive.google.com/drive/folders/1lxCfjiBTbfAK5wWw9cXWTHeLGxfsYZy5?usp=drive_link
+  - topic: 'Lecture 14: Bounded Model Checking'
+    date: 2/23/2024
+  - topic: Code Quality
+    unit: true
+  - topic: 'Lecture 15: Software Metrics'
+    date: 2/28/2024
+  - topic: 'Lecture 16: Design Patterns '
+    date: 3/1/2024
+    assignments: Assignment 3
+    url: https://drive.google.com/drive/folders/171aQv45KcpugkrR-FHNGVKtHUJtR-e-K?usp=drive_link
+  - topic: 'Lecture 17: Code Similarity and Code Search'
+    date: 3/6/2024
+  - topic: Current Topics
+    unit: true
+  - topic: 'Lecture 18: Bugs on the Blockchain'
+    date: 3/8/2024
+    assignments: Project Proposal
+    url: https://docs.google.com/document/d/1ewxLsNcGDksIXG0lisSharOIxKjxJy1-My9TCw6lIdE/edit?usp=drive_link
+  - topic: 'Lecture 19: LLMs and Software Testing'
+    date: 3/13/2024
+  - topic: 'Lecture 20: Final Thoughts'
+    date: 3/15/2024
+  - topic: 'Lecture 21: No Class - Finals Week'
+    date: 3/22/2024
+    assignments: Final Project
+    url: https://docs.google.com/document/d/1akOD4YpfgI3cE2f80E8SjMoMgAQk4Ti2ND4cfYQ3FcM/edit?usp=drive_link
+    holiday: true

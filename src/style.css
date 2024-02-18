@@ -31,8 +31,7 @@ h2 {
 }
 
 h2 {
-  border-left: 4px solid #2689ff;
-  /* border-left: 4px solid #8c1515;*/
+  border-left: 4px solid #8c1515;
   font-size: 1.5rem;
   margin: 1.5rem 0 0.3rem;
   padding: 0 0 0.3rem 0.8rem;
@@ -76,7 +75,7 @@ code {
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 
-*:not(.alert, pre) > code:not(.alert) {
+*:not(.alert, pre)>code:not(.alert) {
   background-color: #f1f3f5;
   padding: 2px;
   border-radius: 4px;
